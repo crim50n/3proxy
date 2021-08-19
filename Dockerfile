@@ -45,7 +45,7 @@ RUN apk update && \
 
 ENTRYPOINT ["/docker-entrypoint.sh"]
 
-VOLUME ["/etc/3proxy/3proxy.conf"]
+VOLUME ["/etc/3proxy"]
 
 EXPOSE 3128:3128/tcp 1080:1080/tcp 8080:8080/tcp
 
