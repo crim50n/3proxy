@@ -23,15 +23,11 @@ ARG VERSION=0.9.4
 LABEL org.label-schema.build-date=$BUILD_DATE \
 	org.label-schema.name="3proxy Socks5 Proxy Container" \
 	org.label-schema.description="3proxy Socks5 Proxy Container" \
-	org.label-schema.url="https://riftbit.com/" \
 	org.label-schema.vcs-ref=$VCS_REF \
-	org.label-schema.vcs-url="https://github.com/riftbit/docker-3proxy" \
-	org.label-schema.vendor="Riftbit Studio" \
+	org.label-schema.vcs-url="https://github.com/crim50n/3proxy" \
 	org.label-schema.version=$VERSION \
 	org.label-schema.schema-version="1.0" \
-	maintainer="Riftbit ErgoZ"
-
-#RUN mkdir -p /usr/local/bin
+	maintainer="crims0n"
 
 COPY --from=builder /3proxy-${VERSION}/bin/3proxy /usr/local/bin/
 COPY docker-entrypoint.sh /docker-entrypoint.sh
