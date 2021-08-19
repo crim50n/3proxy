@@ -1,6 +1,6 @@
 # 3proxy docker
 
-FROM alpine:latest as builder
+FROM alpine:3.12 as builder
 
 ARG VERSION=0.9.4
 
@@ -12,7 +12,7 @@ RUN apk add --update alpine-sdk linux-headers wget bash && \
     make -f Makefile.Linux
 
 # STEP 2 build a small image
-FROM alpine:latest
+FROM alpine:3.12
 
 MAINTAINER Riftbit ErgoZ <ergozru@riftbit.com>
 
