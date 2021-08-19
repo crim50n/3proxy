@@ -9,7 +9,7 @@ Link on github: [riftbit/docker-3proxy](https://github.com/riftbit/docker-3proxy
 
 ### Build Args
 
- - PROXY_VERSION=0.8.13
+ - PROXY_VERSION=0.9.4
  
  
 ### Environment variables:
@@ -28,6 +28,7 @@ Link on github: [riftbit/docker-3proxy](https://github.com/riftbit/docker-3proxy
 
 ### Container Changelog (dd.mm.yyyy)
 
+- **19.08.2021** - 3proxy updated to 0.9.4
 - **15.01.2020** - 3proxy updated to 0.8.13
 - **18.09.2019** - add admin panel, cfg volume, stdout logging
 - **11.05.2018** - added http proxy and 3proxy updated to 0.8.12
