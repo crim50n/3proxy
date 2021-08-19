@@ -1,11 +1,11 @@
 # What is Docker 3Proxy
 Docker 3Proxy is a container with socks5 proxy server based on [3proxy](http://www.3proxy.ru/).
 
-[![](https://images.microbadger.com/badges/version/riftbit/3proxy.svg)](https://microbadger.com/images/riftbit/3proxy) [![](https://images.microbadger.com/badges/image/riftbit/3proxy.svg)](https://microbadger.com/images/riftbit/3proxy) [![Docker Pulls](https://img.shields.io/docker/pulls/riftbit/3proxy.svg)](https://hub.docker.com/r/riftbit/3proxy/) [![Docker Stars](https://img.shields.io/docker/stars/riftbit/3proxy.svg)](https://hub.docker.com/r/riftbit/3proxy/) [![GitHub last commit](https://img.shields.io/github/last-commit/riftbit/docker-3proxy.svg)](https://github.com/riftbit/docker-3proxy) [![Build Status](https://travis-ci.org/riftbit/docker-3proxy.svg?branch=master)](https://travis-ci.org/riftbit/docker-3proxy)
+[![](https://images.microbadger.com/badges/version/crims0n/3proxy.svg)](https://microbadger.com/images/crims0n/3proxy) [![](https://images.microbadger.com/badges/image/crims0n/3proxy.svg)](https://microbadger.com/images/crims0n/3proxy) [![Docker Pulls](https://img.shields.io/docker/pulls/crims0n/3proxy.svg)](https://hub.docker.com/r/crims0n/3proxy/) [![Docker Stars](https://img.shields.io/docker/stars/crims0n/3proxy.svg)](https://hub.docker.com/r/crims0n/3proxy/) [![GitHub last commit](https://img.shields.io/github/last-commit/crim50n/3proxy.svg)](https://github.com/crim50n/3proxy) [![Build Status](https://travis-ci.org/crim50n/3proxy.svg?branch=master)](https://travis-ci.org/crim50n/3proxy)
   
-Link on docker hub: [riftbit/3proxy](https://hub.docker.com/r/riftbit/3proxy/)
+Link on docker hub: [crims0n/3proxy](https://hub.docker.com/r/crims0n/3proxy/)
 
-Link on github: [riftbit/docker-3proxy](https://github.com/riftbit/docker-3proxy)
+Link on github: [crim50n/3proxy](https://github.com/crim50n/3proxy)
 
 ### Build Args
 
@@ -37,7 +37,7 @@ Link on github: [riftbit/docker-3proxy](https://github.com/riftbit/docker-3proxy
 ### Example usage
 
 ```
-docker run --name 3proxy -d -p 3128:3128 --env PROXY_LOGIN=pr0xyUser --env PROXY_PASSWORD=passw0rd riftbit/3proxy
+docker run --name 3proxy -d -p 3128:3128 --env PROXY_LOGIN=pr0xyUser --env PROXY_PASSWORD=passw0rd crims0n/3proxy
 ```
 
 After container starts you will see params for connection setup:
