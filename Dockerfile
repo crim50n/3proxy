@@ -31,21 +31,21 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
 	org.label-schema.schema-version="1.0" \
 	maintainer="Riftbit ErgoZ"
 
-RUN mkdir /etc/3proxy/
+#RUN mkdir -p /usr/local/bin
 
-COPY --from=builder /3proxy-${VERSION}/bin/3proxy /etc/3proxy/
+COPY --from=builder /3proxy-${VERSION}/bin/3proxy /usr/local/bin/
 COPY docker-entrypoint.sh /docker-entrypoint.sh
 
 RUN apk update && \
     apk upgrade && \
     apk add bash && \
-    mkdir -p /etc/3proxy/cfg/traf &&\
+    mkdir -p /etc/3proxy/traf &&\
     chmod +x /docker-entrypoint.sh && \
-    chmod -R +x /etc/3proxy/3proxy
+    chmod -R +x /usr/local/bin/3proxy
 
 ENTRYPOINT ["/docker-entrypoint.sh"]
 
-VOLUME ["/etc/3proxy/cfg/"]
+VOLUME ["/etc/3proxy/3proxy.conf"]
 
 EXPOSE 3128:3128/tcp 1080:1080/tcp 8080:8080/tcp
 
