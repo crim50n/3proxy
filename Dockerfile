@@ -33,7 +33,7 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
 
 RUN mkdir /etc/3proxy/
 
-COPY --from=builder /3proxy-${VERSION}/src/3proxy /etc/3proxy/
+COPY --from=builder /3proxy/src/3proxy /etc/3proxy/
 COPY docker-entrypoint.sh /docker-entrypoint.sh
 
 RUN apk update && \
