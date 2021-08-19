@@ -2,7 +2,7 @@
 
 FROM alpine:latest as builder
 
-ARG VERSION=0.9.3
+ARG VERSION=0.9.4
 
 RUN apk add --update alpine-sdk linux-headers wget bash && \
     cd / && \
@@ -18,7 +18,7 @@ MAINTAINER Riftbit ErgoZ <ergozru@riftbit.com>
 
 ARG BUILD_DATE
 ARG VCS_REF
-ARG VERSION=0.9.3
+ARG VERSION=0.9.4
 
 LABEL org.label-schema.build-date=$BUILD_DATE \
 	org.label-schema.name="3proxy Socks5 Proxy Container" \
