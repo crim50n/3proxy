@@ -42,7 +42,7 @@ if [ "$1" = "start" ]; then
         echo "Proxy process started!"
     fi
 
-    /etc/3proxy/3proxy /etc/3proxy.cfg &
+    /usr/local/bin/3proxy /etc/3proxy.cfg &
 
     child=$!
     wait "$child"
