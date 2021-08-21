@@ -3,8 +3,10 @@ version: '2'
 services:
   serviio:
     restart: always
-    image: riftbit/3proxy:stable
+    image: crims0n/3proxy:latest
     ports:
+     - "1080:1080/tcp"
      - "3128:3128/tcp"
+     - "8080:8080/tcp"
     volumes:
-     - /srv/docker/3proxy:/etc/3proxy/
+     - /data/3proxy:/etc/3proxy/
