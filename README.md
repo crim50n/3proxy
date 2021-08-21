@@ -37,7 +37,7 @@ Link on github: [crim50n/3proxy](https://github.com/crim50n/3proxy)
 ### Example usage
 
 ```
-docker run --name 3proxy -d -p 3128:3128 --env PROXY_LOGIN=pr0xyUser --env PROXY_PASSWORD=passw0rd crims0n/3proxy
+docker run --name 3proxy -d -p 3128:3128 -p 1080:1080 -p 8080:8080 -e PROXY_LOGIN=pr0xyUser -e PROXY_PASSWORD=passw0rd crims0n/3proxy
 ```
 
 After container starts you will see params for connection setup:
