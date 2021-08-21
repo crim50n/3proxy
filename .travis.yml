@@ -3,7 +3,7 @@ language: bash
 services: docker
 
 #install:
-#  - git clone https://github.com/crims0n/3proxy.git ~/3proxy
+#  - git clone https://github.com/crim50n/3proxy.git ~/3proxy
 
 before_script:
   - image="crims0n/3proxy"
