@@ -3,10 +3,10 @@ language: bash
 services: docker
 
 #install:
-#  - git clone https://github.com/riftbit/docker-3proxy.git ~/docker-3proxy
+#  - git clone https://github.com/crims0n/3proxy.git ~/3proxy
 
 before_script:
-  - image="riftbit/3proxy"
+  - image="crims0n/3proxy"
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
 
 script:
